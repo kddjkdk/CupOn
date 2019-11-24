@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0DEB1"
+    tools:context=".LoginActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="321dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgView_logo"
+        app:layout_constraintVertical_bias="0.274">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sangsangbodym"
+                android:gravity="center"
+
+                android:text="ID"
+                android:textColor="@android:color/black"
+                android:textSize="17.5pt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.103"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/box_round"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:fontFamily="@font/sangsangbodym"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/et_pw"
+                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintStart_toStartOf="@+id/et_pw"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.468" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="PW"
+                android:textColor="@android:color/black"
+                android:textSize="15pt"
+                android:fontFamily="@font/sangsangbody_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.103"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <EditText
+                android:id="@+id/et_pw"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@drawable/box_round"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:fontFamily="@font/sangsangbodym"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.571" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="251dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintVertical_bias="0.237">
+
+        <Button
+            android:id="@+id/btn_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/box_round"
+            android:fontFamily="@font/sangsangbody_m"
+            android:text="회원가입"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:background="@drawable/box_round"
+            android:fontFamily="@font/sangsangbody_m"
+            android:text="로그인" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgView_logo"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
